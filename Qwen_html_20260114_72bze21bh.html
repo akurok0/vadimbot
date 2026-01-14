@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Электронная библиотека — читайте классику бесплатно и без регистрации." />
+  <title>Электронная библиотека</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .book {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .book img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .book h2 {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    .book p {
+      font-size: 0.95em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Электронная библиотека</h1>
+    <p>Классическая литература в открытом доступе</p>
+  </header>
+
+  <main class="books">
+    <div class="book">
+      <picture>
+        <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Master_i_Margarita_1st_edition.jpg/220px-Master_i_Margarita_1st_edition.jpg" type="image/jpeg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Master_i_Margarita_1st_edition.jpg/220px-Master_i_Margarita_1st_edition.jpg" 
+             alt="Мастер и Маргарита" loading="lazy">
+      </picture>
+      <h2>Мастер и Маргарита</h2>
+      <p>Михаил Булгаков</p>
+    </div>
+
+    <div class="book">
+      <picture>
+        <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/War_and_peace_title_page.jpg/220px-War_and_peace_title_page.jpg" type="image/jpeg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/War_and_peace_title_page.jpg/220px-War_and_peace_title_page.jpg" 
+             alt="Война и мир" loading="lazy">
+      </picture>
+      <h2>Война и мир</h2>
+      <p>Лев Толстой</p>
+    </div>
+
+    <div class="book">
+      <picture>
+        <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Prideandprejudicecover.jpg/220px-Prideandprejudicecover.jpg" type="image/jpeg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Prideandprejudicecover.jpg/220px-Prideandprejudicecover.jpg" 
+             alt="Гордость и предубеждение" loading="lazy">
+      </picture>
+      <h2>Гордость и предубеждение</h2>
+      <p>Джейн Остин</p>
+    </div>
+
+    <div class="book">
+      <picture>
+        <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/1990s_UK_Penguin_Classics_edition_of_Nineteen_Eighty-Four.jpg/220px-1990s_UK_Penguin_Classics_edition_of_Nineteen_Eighty-Four.jpg" type="image/jpeg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/1990s_UK_Penguin_Classics_edition_of_Nineteen_Eighty-Four.jpg/220px-1990s_UK_Penguin_Classics_edition_of_Nineteen_Eighty-Four.jpg" 
+             alt="1984" loading="lazy">
+      </picture>
+      <h2>1984</h2>
+      <p>Джордж Оруэлл</p>
+    </div>
+  </main>
+
+</body>
+</html>
